@@ -1,5 +1,8 @@
+import { CgMouse } from "react-icons/cg";
+
 import React, { Fragment, useEffect } from "react";
-import { CgMouse } from "react-icons/all";
+import { FaShoppingCart, FaUser } from "react-icons/fa"; // ← example
+
 import "./Home.css";
 import ProductCard from "./ProductCard.js";
 import MetaData from "../layout/MetaData";

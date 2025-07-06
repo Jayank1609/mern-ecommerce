@@ -1,3 +1,5 @@
+require("dotenv").config({ path: "./.env" });
+
 const express = require("express");
 const app = express();
 const cookieParser = require("cookie-parser");
@@ -9,7 +11,8 @@ const errorMiddleware = require("./middleware/error");
 
 // Config
 if (process.env.NODE_ENV !== "PRODUCTION") {
-  require("dotenv").config({ path: "backend/config/config.env" });
+  require("dotenv").config({ path: "./.env" });
+
 }
 
 app.use(express.json());
